@@ -1,20 +1,22 @@
 @font-face {
     font-family: 'gilroy';
-    src: url('gilroy-regular-webfont.woff2') format('woff2'),
-        url('gilroy-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url('font/Gilroy-Medium.ttf');
+  }
+
+@font-face {
+    font-family: 'gotham condensed';
+    src: url('font/Gotham\ Condensed\ Bold.otf');
+   
 
 }
 
 @font-face {
-    font-family: 'gotham condensed';
-    src: url('gotham_condensed_bold-webfont.woff2') format('woff2'),
-        url('gotham_condensed_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Delirium NCV';
+    src: url('font/DELIRIUM\ NCV.ttf');
 
 }
+
+
 
 * {
     margin: 0;
@@ -28,22 +30,23 @@ body {
     height: 100%;
 }
 
-section{
+section {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-     background:rgb(1, 51, 1) ;
-    
+    background: rgb(1, 51, 1);
+
     animation: animateBg 10s linear infinite;
 }
 
-section .loader{
+section .loader {
     position: relative;
     width: 120px;
     height: 120px;
 }
-section .loader span{
+
+section .loader span {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,23 +54,24 @@ section .loader span{
     height: 100%;
     transform: rotate(calc(18deg * var(--i)));
 }
-section .loader span::before{
+
+section .loader span::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 15px ;
-    border-radius:50% ;
+    width: 15px;
+    border-radius: 50%;
     height: 15px;
     background-color: #00ff0a;
     box-shadow: 0 0 10px #00ff0a,
-                0 0 20px #00ff0a,
-                0 0 40px #00ff0a,
-                0 0 60px #00ff0a,
-                0 0 80px #00ff0a,
-                0 0 100px #00ff0a,;
-    animation:animate 2s linear infinite;
-    animation-delay: calc(0.1s * var(--i)) ;
+        0 0 20px #00ff0a,
+        0 0 40px #00ff0a,
+        0 0 60px #00ff0a,
+        0 0 80px #00ff0a,
+        0 0 100px #00ff0a, ;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
 }
 
 
@@ -82,30 +86,6 @@ section .loader span::before{
 body::-webkit-scrollbar {
     display: none;
 }
-/* #spinner   {  
-           
-    animation: spin 1s linear infinite;
-    color: red;
-}
-  
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-} */
-  
-/* .inline{
-display: flex;
-}
-.center{
-flex:left;
-}
-.spinner i{
-margin-top: 10px;
-margin-left: 50px;
-
-
-} */
 
 
 /* nav starts  */
@@ -1985,23 +1965,22 @@ margin-left: 50px;
 .find_our_store {
     display: flex;
     flex-direction: column;
+    font-family: 'gotham condensed';
     justify-content: space-between;
     width: 20vw;
     height: 40vh;
 }
 
-.find_our_store>h1 {
+.find_our_store h1 {
     height: 4vh;
-    font-family: "gilroy";
     color: #fff;
     font-size: 3vh;
 }
 
-.find_our_store>h2 {
+.find_our_store h2 {
     height: 4vh;
 
     display: flex;
-    font-family: "gilroy";
     color: #fff;
     font-size: 3vh;
 }
@@ -2020,7 +1999,7 @@ margin-left: 50px;
 .product {
     height: 40vh;
     width: 20vw;
-    display: flex;
+    display: flex   ;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
@@ -2279,6 +2258,7 @@ margin-left: 50px;
         height: auto;
         width: 27vw;
     }
+
     .p2_l_txt>h2 {
         height: auto;
         font-family: "gotham condensed";
@@ -2286,6 +2266,7 @@ margin-left: 50px;
         font-size: 3vh;
         color: #fff;
     }
+
     .p2_l_txt>h3 {
         height: auto;
         width: 27vw;
@@ -2295,6 +2276,7 @@ margin-left: 50px;
         font-size: 4vh;
         color: #fff;
     }
+
     .p2_l_txt>h4 {
         height: auto;
         font-family: "gilroy";
@@ -2569,6 +2551,7 @@ margin-left: 50px;
         top: 62%;
         transform: rotate(-80deg);
     }
+
     .resistance>h3 {
         margin-top: 5vh;
         margin-left: 10vw;
@@ -2680,15 +2663,15 @@ margin-left: 50px;
     }
 
     #strong {
-        font-size: 3vh;
+        font-size: 2vh;
         height: 10vh;
-        top: 70%;
+        top: 77%;
         left: 15%;
     }
 
     #faster {
-        font-size: 3vh;
-        top: 70%;
+        font-size: 2vh;
+        top: 77%;
         left: 87%;
         height: 10vh;
 
@@ -3214,6 +3197,7 @@ margin-left: 50px;
         height: auto;
         text-align: center;
     }
+
     #p4_left>h3::before {
         content: "";
         position: absolute;
@@ -3229,6 +3213,7 @@ margin-left: 50px;
         font-size: 10vh;
         font-family: "gilroy";
     }
+
     #p4_left>h3::before {
         content: "";
         position: absolute;
@@ -3358,6 +3343,7 @@ margin-left: 50px;
         text-transform: capitalize;
         font-size: 1.5vh;
     }
+
     .address>h3 {
         height: auto;
         color: rgba(240, 230, 230, 0.911);
@@ -3428,20 +3414,20 @@ margin-left: 50px;
         font-weight: 100;
         color: #fff;
     }
-.find_our_store>h1 {
-    height: auto;
-    font-family: "gilroy";
-    color: #fff;
-    font-size: 3vh;
-}
 
-.find_our_store>h2{
-    height: auto;
-    display: flex;
-    font-family: "gilroy";
-    color: #fff;
-    font-size: 2vh;
-}
+    .find_our_store h1 {
+        height: auto;
+        color: #fff;
+        font-size: 3vh;
+    }
+
+    .find_our_store h2 {
+        height: auto;
+        display: flex;
+        color: #fff;
+        font-size: 2vh;
+    }
+
     .p6_bottom {
         padding: 0px 20px;
         position: absolute;
@@ -3454,20 +3440,25 @@ margin-left: 50px;
     }
 }
 
-@keyframes animateBg{
+@keyframes animateBg {
 
-    0%{
-        filter:hue-rotate(0deg);
+    0% {
+        filter: hue-rotate(0deg);
     }
-    100%{
-        filter:hue-rotate(360deg);
+
+    100% {
+        filter: hue-rotate(360deg);
     }
- }@keyframes animate {
-    0%{
+}
+
+@keyframes animate {
+    0% {
         transform: scale(1);
     }
-    80%,100%{
+
+    80%,
+    100% {
         transform: scale(0);
     }
-    
+
 }

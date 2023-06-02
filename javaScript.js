@@ -627,7 +627,7 @@ function page5() {
 
             y: 50,
             ease: Power1.easeOut,
-            stagger: 0.3,
+            stagger: 0.2,
 
 
 
